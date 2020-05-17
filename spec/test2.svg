@@ -1,0 +1,11 @@
+<svg contentScriptType="text/ecmascript" width="105"
+    xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify"
+    contentStyleType="text/css" height="20" preserveAspectRatio="xMidYMid meet"
+    xmlns="http://www.w3.org/2000/svg" version="1.0">
+    <rect rx="3" fill="#555" width="105" height="20"/>
+    <rect rx="3" fill="#4c1" width="33" x="72" height="20"/>
+    <g font-size="11" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" fill="#fff">
+      <text x="6" y="14">test again</text>
+      <text x="78" y="14">99%</text>
+    </g>
+</svg>
