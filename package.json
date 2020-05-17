@@ -1,6 +1,6 @@
 {
   "name": "badge-svg",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A library to generate badge svg",
   "main": "nodejs/index.js",
   "scripts": {
