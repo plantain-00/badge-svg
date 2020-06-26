@@ -2,7 +2,6 @@ import * as fs from 'fs'
 import generateBadgeSvg from './src'
 
 const tsFiles = `"src/**/*.ts"`
-const jsFiles = `"*.config.js"`
 
 export default {
   build: [
@@ -21,12 +20,12 @@ export default {
     }
   ],
   lint: {
-    ts: `eslint --ext .js,.ts ${tsFiles} ${jsFiles}`,
+    ts: `eslint --ext .js,.ts ${tsFiles}`,
     export: `no-unused-export ${tsFiles} --strict --need-module tslib`,
     markdown: `markdownlint README.md`,
     typeCoverage: 'type-coverage -p src/tsconfig.nodejs.json --strict',
     typeCoverageBrowser: 'type-coverage -p src/tsconfig.browser.json --strict'
   },
   test: 'ava',
-  fix: `eslint --ext .js,.ts ${tsFiles} ${jsFiles} --fix`
+  fix: `eslint --ext .js,.ts ${tsFiles} --fix`
 }
