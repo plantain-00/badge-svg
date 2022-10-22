@@ -26,6 +26,6 @@ export default {
     typeCoverage: 'type-coverage -p src/tsconfig.nodejs.json --strict',
     typeCoverageBrowser: 'type-coverage -p src/tsconfig.browser.json --strict'
   },
-  test: 'ava',
+  test: 'ava --timeout=30s',
   fix: `eslint --ext .js,.ts ${tsFiles} --fix`
 }
